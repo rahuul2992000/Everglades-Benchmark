@@ -42,8 +42,9 @@ Everglades-Benchmark/                - this repository root
 │   ├── Everglades-ParameterStudy-Viz.ipynb
 │   ├── Everglades-Data-Visualizations-ActualvsPred.ipynb
 │   └── Everglades-Inference-Time-Visualization.ipynb
-├── figure/                    - static framework image for paper/README
-    └── framework.png
+└── figure/                    - static framework image and results table for README
+    ├── Framework-Visual.jpeg
+    └── Everglades-Table-Results.png
 ```
 ## Usage
 
