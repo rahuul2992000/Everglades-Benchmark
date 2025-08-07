@@ -64,5 +64,7 @@ Launch Jupyter and run the notebooks:
 
 ## Results
 The table below shows how each model performs across 5 stations (NP205, P33, G620, NESRS1, NESRS2) for lead times of 7, 14, 21, and 28 days. The first 12 models are task-specific, while the last 5 are pre-trained foundation models for time series. The best results are in bold.
-![Everglades-Benchmark Framework](figure/Everglades-Table-Results.png)
 
+<p align="center">
+  <img src="figure/Everglades-Table-Results.png" alt="Main results comparing task-specific and pre-trained foundation models for time series" />
+</p>
