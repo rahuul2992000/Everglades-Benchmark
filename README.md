@@ -23,8 +23,8 @@ Everglades-Benchmark/                - this repository root
 ├── README.md                       
 ├── requirements.txt                - pinned Python dependencies
 ├── data/                           - input & result files
-│   ├── final_concatenated_data.csv
-│   └── Results-28days-final.xlsx
+│   ├── final_concatenated_data.csv  - raw & processed time-series data
+│   └── Results-28days-final.xlsx    - results of all models
 ├── task-specific-models/           - task-specific forecasting models
 │   ├── Everglades-Informer-28days.ipynb
 │   └── Everglades-TaskSpecific-Models28days.ipynb
@@ -43,3 +43,21 @@ Everglades-Benchmark/                - this repository root
     ├── Everglades-Data-Visualizations-ActualvsPred.ipynb
     └── Everglades-Inference-Time-Visualization.ipynb
 ```
+## Usage
+
+Launch Jupyter and run the notebooks:
+
+-Task-specific models
+    - Trains and evaluates Informer and other classical architectures. Run the ipynb files under the task-specific-models folder to reproduce the experiment results.
+
+-Foundation models
+    - Run the ipynb files under the foundation-models folder to reproduce the experiment results.
+
+-Extreme-case evaluation
+    - Run the ipynb file under the extreme-case-evaluation folder to compute the Symmetric Extremal Dependence Index for each method.
+
+-Visualizations
+    - Station-variable correlations: Visualizations/Everglades-Station-Variables-Analysis.ipynb
+    - Parameter study plots: Visualizations/Everglades-ParameterStudy-Viz.ipynb
+    - Actual vs. predicted time-series: Visualizations/Everglades-Data-Visualizations-ActualvsPred.ipynb
+    - Inference time comparison: Visualizations/Everglades-Inference-Time-Visualization.ipynb
