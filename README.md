@@ -37,11 +37,13 @@ Everglades-Benchmark/                - this repository root
 │   └── Everglades-TimesFM-28days.ipynb
 ├── extreme-case-evaluation/        - SEDI metrics
 │   └── Everglades-SEDI-Metrics.ipynb
-└── Visualizations/                 - analysis & plotting notebooks
-    ├── Everglades-Station-Variables-Analysis.ipynb
-    ├── Everglades-ParameterStudy-Viz.ipynb
-    ├── Everglades-Data-Visualizations-ActualvsPred.ipynb
-    └── Everglades-Inference-Time-Visualization.ipynb
+├── Visualizations/                 - analysis & plotting notebooks
+│   ├── Everglades-Station-Variables-Analysis.ipynb
+│   ├── Everglades-ParameterStudy-Viz.ipynb
+│   ├── Everglades-Data-Visualizations-ActualvsPred.ipynb
+│   └── Everglades-Inference-Time-Visualization.ipynb
+├── figure/                    - static framework image for paper/README
+    └── framework.png
 ```
 ## Usage
 
