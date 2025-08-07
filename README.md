@@ -61,3 +61,6 @@ Launch Jupyter and run the notebooks:
     - Parameter study plots: Visualizations/Everglades-ParameterStudy-Viz.ipynb
     - Actual vs. predicted time-series: Visualizations/Everglades-Data-Visualizations-ActualvsPred.ipynb
     - Inference time comparison: Visualizations/Everglades-Inference-Time-Visualization.ipynb
+
+## Results
+The table below shows how each model performs across 5 stations (NP205, P33, G620, NESRS1, NESRS2) for lead times of 7, 14, 21, and 28 days. The first 12 models are task-specific, while the last 5 are pre-trained foundation models for time series. The best results are in bold.
