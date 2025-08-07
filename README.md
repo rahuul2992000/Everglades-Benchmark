@@ -47,16 +47,16 @@ Everglades-Benchmark/                - this repository root
 
 Launch Jupyter and run the notebooks:
 
--Task-specific models
+- Task-specific models
     - Trains and evaluates Informer and other classical architectures. Run the ipynb files under the task-specific-models folder to reproduce the experiment results.
 
--Foundation models
+- Foundation models
     - Run the ipynb files under the foundation-models folder to reproduce the experiment results.
 
--Extreme-case evaluation
+- Extreme-case evaluation
     - Run the ipynb file under the extreme-case-evaluation folder to compute the Symmetric Extremal Dependence Index for each method.
 
--Visualizations
+- Visualizations
     - Station-variable correlations: Visualizations/Everglades-Station-Variables-Analysis.ipynb
     - Parameter study plots: Visualizations/Everglades-ParameterStudy-Viz.ipynb
     - Actual vs. predicted time-series: Visualizations/Everglades-Data-Visualizations-ActualvsPred.ipynb
