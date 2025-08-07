@@ -16,3 +16,30 @@ Here's an overview of our framework for water level forecasting.
 3. Verify your setup:
     - `python --version`  # should show Python 3.10.x
     - `pip list`          # confirm key packages are installed
+
+## Directory Tree
+```text
+Everglades-Benchmark/                - this repository root
+├── README.md                       
+├── requirements.txt                - pinned Python dependencies
+├── data/                           - input & result files
+│   ├── final_concatenated_data.csv
+│   └── Results-28days-final.xlsx
+├── task-specific-models/           - task-specific forecasting models
+│   ├── Everglades-Informer-28days.ipynb
+│   └── Everglades-TaskSpecific-Models28days.ipynb
+├── foundation-models/              - pre-trained time series foundation models
+│   ├── Everglades-Chronos-28days.ipynb
+│   ├── Everglades-Moirai-28days.ipynb
+│   ├── Everglades-TimeGPT-28days.ipynb
+│   ├── Everglades-TimeLLM-28days.ipynb
+│   ├── Everglades-Timer-28days.ipynb
+│   └── Everglades-TimesFM-28days.ipynb
+├── extreme-case-evaluation/        - SEDI metrics
+│   └── Everglades-SEDI-Metrics.ipynb
+└── Visualizations/                 - analysis & plotting notebooks
+    ├── Everglades-Station-Variables-Analysis.ipynb
+    ├── Everglades-ParameterStudy-Viz.ipynb
+    ├── Everglades-Data-Visualizations-ActualvsPred.ipynb
+    └── Everglades-Inference-Time-Visualization.ipynb
+```
