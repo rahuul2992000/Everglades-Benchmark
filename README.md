@@ -84,7 +84,8 @@ To run either applications:
 1. **Navigate into the project folder**  
    `cd Everglades-Benchmark/Web_Demo_Application`
 
-2. **Install the required environment**    
+2. **Install the required environment**
+        
 For the NeuralForecast demo:
   - `pip install -r ../requirements.txt`  
 For the Chronos-Bolt demo (requires separate env):
