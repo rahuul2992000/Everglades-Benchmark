@@ -86,7 +86,7 @@ To run either applications:
 
 2. **Install the required environment**
         
-For the NeuralForecast demo:
+For the Task-specific models demo:
   - `pip install -r ../requirements.txt`
 
 For the Chronos-Bolt demo (requires separate env):
