@@ -9,7 +9,7 @@ from autogluon.timeseries import TimeSeriesDataFrame, TimeSeriesPredictor
 # CONFIG
 # ======================================================================
 
-DATA_FILEPATH = "/aul/homes/rrang016/Downloads/final_concatenated_data.csv"
+DATA_FILEPATH = "File Path"
 HISTORY_WINDOW_SIZE = 107       # same as your script
 PREDICTION_LENGTH = 7           # next 7 days
 FIRST_DATE = pd.to_datetime("2024-01-29")  # same as your script
