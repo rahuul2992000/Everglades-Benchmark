@@ -72,6 +72,32 @@ Launch Jupyter and run the notebooks:
     - Actual vs. predicted time-series: Visualizations/Everglades-Data-Visualizations-ActualvsPred.ipynb
     - Inference time comparison: Visualizations/Everglades-Inference-Time-Visualization.ipynb
 
+## Web Demo Usage
+
+The `Web_Demo_Application/` folder contains two interactive Streamlit applications:
+
+- **app_chronos_autogluon.py** → Chronos-Bolt forecasting demo  
+- **app_neuralforecast_everglades.py** → 17-model NeuralForecast benchmark demo  
+
+To run either applications:
+
+1. Navigate into the project folder  
+   ```bash
+   cd Everglades-Benchmark/Web_Demo_Application
+
+2. Install the required environment  
+For the NeuralForecast demo:
+  - pip install -r ../requirements.txt
+
+For the Chronos-Bolt demo (requires separate env):
+  - pip install -r requirements_chronos.txt
+
+3. Launch Streamlit
+
+- streamlit run app_chronos_autogluon.py  
+or
+- streamlit run app_neuralforecast_everglades.py
+
 ## Results
 The table below shows how each model performs across 5 stations (NP205, P33, G620, NESRS1, NESRS2) for lead times of 7, 14, 21, and 28 days. The first 12 models are task-specific, while the last 5 are pre-trained foundation models for time series. The best results are in bold.
 
