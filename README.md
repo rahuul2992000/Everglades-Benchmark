@@ -22,6 +22,7 @@ Here's an overview of our framework for water level forecasting.
 Everglades-Benchmark/                - this repository root
 ├── README.md                       
 ├── requirements.txt                - pinned Python dependencies
+├── requirements_chronos.txt        - pinned dependencies for Web demo app for Chronos
 ├── data/                           - input & result files
 │   ├── final_concatenated_data.csv  - raw & processed time-series data
 │   └── Results-28days-final.xlsx    - results of all models
