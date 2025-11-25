@@ -16,7 +16,7 @@ from sklearn.metrics import mean_absolute_error as mae, mean_squared_error as ms
 # CONFIG
 # ======================================================================
 
-DATA_FILEPATH = "D:/Downloads/Everglades-Code/data/final_concatenated_data.csv"
+DATA_FILEPATH = "File Path"
 
 HORIZON = 7
 INPUT_SIZE = 100
