@@ -77,7 +77,7 @@ Launch Jupyter and run the notebooks:
 The `Web_Demo_Application/` folder contains two interactive Streamlit applications:
 
 - **app_chronos_autogluon.py** → Chronos-Bolt forecasting demo  
-- **app_neuralforecast_everglades.py** → 17-model NeuralForecast benchmark demo  
+- **app_neuralforecast_everglades.py** → Task-specific models benchmark demo  
 
 To run either applications:
 
