@@ -42,6 +42,13 @@ Everglades-Benchmark/                - this repository root
 │   ├── Everglades-ParameterStudy-Viz.ipynb
 │   ├── Everglades-Data-Visualizations-ActualvsPred.ipynb
 │   └── Everglades-Inference-Time-Visualization.ipynb
+│
+├── Web_Demo_Application/                 - Interactive Web Demo Application Folder
+│   ├── Demo.png                           - Application GUI Visual
+│   ├── Demo2.png                          - Application GUI Visual
+│   ├── app_chronos_autogluon.py           - Chronos-Bolt Streamlit app
+│   └── app_neuralforecast_everglades.py   - Multi-Model Benchmarks Streamlit app
+│
 └── figure/                    - static framework image and results table for README
     ├── Framework-Visual.jpeg
     └── Everglades-Table-Results.png
