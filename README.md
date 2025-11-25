@@ -88,6 +88,7 @@ To run either applications:
         
 For the NeuralForecast demo:
   - `pip install -r ../requirements.txt`
+
 For the Chronos-Bolt demo (requires separate env):
   - `pip install -r requirements_chronos.txt`
 
