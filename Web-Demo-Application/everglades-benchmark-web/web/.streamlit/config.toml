@@ -1,0 +1,14 @@
+[theme]
+base = "light"
+primaryColor = "#1F5F74"
+backgroundColor = "#FBFCFB"
+secondaryBackgroundColor = "#EEF1ED"
+textColor = "#17252A"
+font = "Public Sans:https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap, system-ui, sans-serif"
+baseRadius = "small"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
