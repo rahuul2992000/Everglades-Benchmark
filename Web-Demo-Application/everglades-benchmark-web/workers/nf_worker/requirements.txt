@@ -1,0 +1,14 @@
+# NeuralForecast environment (Python 3.10).
+# These pins come from Everglades-Benchmark/requirements.txt. Replace them with
+# the output of `pip freeze` from the environment that produced the paper, so
+# live runs reproduce the published numbers as closely as possible.
+numpy==1.26.4
+pandas==2.1.4
+neuralforecast==2.0.0
+torch==2.5.0
+scikit-learn==1.5.2
+# service
+fastapi
+uvicorn
+pydantic>=2
+-e ../../core
