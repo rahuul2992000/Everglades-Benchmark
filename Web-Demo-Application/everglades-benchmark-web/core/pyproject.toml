@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "everglades-core"
+version = "0.1.0"
+description = "Shared data, scoring, and run-store code for the Everglades benchmark website"
+requires-python = ">=3.10"
+dependencies = ["pandas", "numpy"]
+
+[project.optional-dependencies]
+service = ["fastapi", "uvicorn", "pydantic>=2"]
+
+[tool.setuptools.packages.find]
+include = ["everglades_core*"]
