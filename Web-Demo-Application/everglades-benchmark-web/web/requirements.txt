@@ -1,0 +1,6 @@
+# Website environment (lightweight: no ML libraries).
+streamlit>=1.50,<2
+altair>=5.5
+pandas
+requests
+-e ../core
