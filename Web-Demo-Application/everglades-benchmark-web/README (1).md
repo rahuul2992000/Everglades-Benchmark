@@ -65,8 +65,7 @@ store.
   evaluated with rolling cross-validation over the test period; each test date's
   prediction is the mean of the forecasts from every window that covers it.
 - **Chronos-Bolt:** used zero-shot (`bolt_small`); for each day of the test period it
-  forecasts from the preceding 100 + h days (107 to 128 days, h = horizon), following
-  the evaluation code of the study.
+  forecasts following the evaluation code of the study.
 - **Scoring:** metrics per station for the five target stations (NP205, P33, G620,
   NESRS1, NESRS2); the overall value is their mean.
 
