@@ -1,18 +1,4 @@
-"""Compare runs in the store with the published prediction files.
 
-Reference files are found with the same rules as NEWgof_all_models:
-  <paper1-root>/Everglades-Models-Results-{h}days/<Model>/...results*.csv
-      (the -Multivariate folder is preferred where it exists)
-  <informer-dir>/Informer-Results-{h}days.csv
-  <chronos-dir>/Chronos_predictions_{h}days.csv   (defaults to
-      <paper1-root>/Everglades-Models-Results-{h}days/Chronos/)
-
-A run passes when every metric rounds to the same 3 decimals as the
-reference (2 for PBIAS). Row-level differences are reported too.
-
-    python scripts/parity_check.py --paper1-root /aul/homes/rrang016/ALL-MODEL-RESULTS-PAPER1/Paper1-ALL-MODELS-RESULTS \\
-        --informer-dir /aul/homes/rrang016/Documents
-"""
 import argparse
 import sys
 from pathlib import Path
