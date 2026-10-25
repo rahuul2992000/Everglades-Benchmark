@@ -129,5 +129,5 @@ with right:
                      "test period": meta["test_period"],
                      "data file": meta["data_file"],
                      "data sha256": meta["data_sha256"],
-                     "software": meta["environment"],
+                     "software": {k: v for k, v in meta["environment"].items() if k != "host"},
                      "run id": meta["run_id"]}, expanded=False)
