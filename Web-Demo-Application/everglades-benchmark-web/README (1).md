@@ -7,8 +7,6 @@ scoring as the paper, compare them, and see forecasts, without writing code or
 needing a GPU. Every result shown on the site is computed by the site's own model
 services.
 
-**Live demo:** _link to be added_
-
 ## What you can do on the site
 
 | Page | What it shows |
