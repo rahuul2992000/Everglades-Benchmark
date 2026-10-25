@@ -1,0 +1,7 @@
+store/
+parity_report.csv
+__pycache__/
+*.pyc
+.pytest_cache/
+AutogluonModels/
+lightning_logs/
