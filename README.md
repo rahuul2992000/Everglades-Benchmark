@@ -19,40 +19,59 @@ Here's an overview of our framework for water level forecasting.
 
 ## Directory Tree
 ```text
-Everglades-Benchmark/                - this repository root
-├── README.md                       
-├── requirements.txt                - pinned Python dependencies
-├── requirements_chronos.txt        - pinned dependencies for Web demo app for Chronos
-├── data/                           - input & result files
-│   ├── final_concatenated_data.csv  - raw & processed time-series data
-│   └── Results-28days-final.xlsx    - results of all models
-├── task-specific-models/           - task-specific forecasting models
-│   ├── Everglades-Informer-28days.ipynb
-│   └── Everglades-TaskSpecific-Models28days.ipynb
-├── foundation-models/              - pre-trained time series foundation models
+
+Everglades-Benchmark/                         - repository root
+├── README.md
+├── requirements.txt                          - pinned Python dependencies
+├── requirements_chronos.txt                  - pinned dependencies for a separate Chronos-Bolt environment
+├── data/
+│   ├── final_concatenated_data.csv           - raw & processed time-series data
+│   ├── results_all_horizons.csv              - per-station MAE and RMSE and overall metrics of all models at all lead times
+│   └── Results-28days-final.xlsx             - results of all models
+├── task-specific-models/                     - task-specific forecasting models
+│   ├── Everglades-TaskSpecific-Models28days.ipynb   - NBEATS, NLinear, DLinear, TimeMixer, TSMixer, TSMixerx,
+│   │                                                  PatchTST, iTransformer, KAN, RMoK
+│   └── Everglades-Informer-28days.ipynb
+├── foundation-models/                        - time series foundation models (zero-shot)
 │   ├── Everglades-Chronos-28days.ipynb
 │   ├── Everglades-Moirai-28days.ipynb
 │   ├── Everglades-TimeGPT-28days.ipynb
-│   ├── Everglades-TimeLLM-28days.ipynb
 │   ├── Everglades-Timer-28days.ipynb
-│   └── Everglades-TimesFM-28days.ipynb
-├── extreme-case-evaluation/        - SEDI metrics
-│   └── Everglades-SEDI-Metrics.ipynb
-├── Visualizations/                 - analysis & plotting notebooks
+│   ├── Everglades-TimesFM-28days.ipynb
+│   └── Everglades-TimeLLM-28days.ipynb       
+├── extreme-case-evaluation/                  - extreme-event evaluation
+│   ├── Everglades-SEDI-Metrics.ipynb         - threshold-based SEDI (T-SEDI) for all models
+│   ├── G620_visualization.jpeg               - forecast plots against the extreme-value thresholds, helping understand TSMixerx behavior
+│   ├── NESRS1_visual.jpeg
+│   └── P33_visual.jpeg
+├── Missingness Statistics/                   - missing-data statistics and interpolation examples
+│   ├── MissingData-All-Variables.png
+│   ├── Percentage_Missing_Values.png
+│   └── Interpolation.png
+├── Visualizations/                           - analysis and plotting notebooks
 │   ├── Everglades-Station-Variables-Analysis.ipynb
 │   ├── Everglades-ParameterStudy-Viz.ipynb
 │   ├── Everglades-Data-Visualizations-ActualvsPred.ipynb
 │   └── Everglades-Inference-Time-Visualization.ipynb
-│
-├── Web_Demo_Application/                 - Interactive Web Demo Application Folder
-│   ├── Demo.png                           - Application GUI Visual
-│   ├── Demo2.png                          - Application GUI Visual
-│   ├── app_chronos_autogluon.py           - Chronos-Bolt Streamlit app
-│   └── app_neuralforecast_everglades.py   - Multi-Model Benchmarks Streamlit app
-│
-└── figure/                    - static framework image and results table for README
-    ├── Framework-Visual.jpeg
-    └── Everglades-Table-Results.png
+├── figure/                                   - figures used in this README and the analysis
+│   ├── Framework_visual.png                  - benchmark overview
+│   ├── Benchmark-Table-results.png           - results of all models
+│   ├── CorrelationNew.jpeg                   - correlation of the station variables
+│   ├── Model-Complexity.png                  - accuracy, inference time and model size
+│   ├── ChronosParameterStudy.png             - Chronos parameter study
+│   └── TSFM-Parameter-Study.png              - foundation model parameter study
+└── Web-Demo-Application/                     - interactive benchmark website
+    ├── everglades-benchmark-web/             - website source (see its own README)
+    │   ├── README.md                         - setup, running and testing the website
+    │   ├── core/everglades_core/             - shared configuration, data split, metrics and results store
+    │   ├── workers/
+    │   │   ├── nf_worker/                    - service for the 11 NeuralForecast models
+    │   │   └── chronos_worker/               - service for Chronos-Bolt
+    │   ├── web/                              - Streamlit website
+    │   ├── scripts/                          - running models without the website, parity checks, export
+    │   ├── tests/                            - automated tests and published prediction fixtures
+    │   └── data/final_concatenated_data.csv  - copy of the benchmark dataset
+    └── Web-Visuals-Screenshots/              - screenshots of the website pages
 ```
 ## Usage
 
